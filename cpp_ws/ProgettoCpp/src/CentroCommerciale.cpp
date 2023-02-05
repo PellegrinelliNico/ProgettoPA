@@ -84,6 +84,7 @@ shared_ptr<vector<attivita::Attivita*>> CentroCommerciale::getNegoziPerTipo(atti
 		}
 	}
 	delete a;
+	delete b;
 
 	sort(listaNegozi->begin(), listaNegozi->end(), pointerCompare);
 	return listaNegozi;
@@ -104,6 +105,7 @@ shared_ptr<vector<attivita::Attivita*>> CentroCommerciale::getMiglioriRistoranti
 		}
 	}
 	delete a;
+	delete b;
 
 	sort(listaRistoranti->begin(), listaRistoranti->end(), pointerCompareValutazione);
 	for(int i = listaRistoranti->size(); i > 5; i--)
